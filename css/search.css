@@ -1,0 +1,41 @@
+@import url(./reset.css);
+body {
+  padding: 0.42667rem 0.42667rem 0 0.42667rem; }
+
+#header {
+  overflow: hidden; }
+  #header .left {
+    width: 1.49333rem;
+    height: 1.49333rem;
+    text-align: center;
+    line-height: 1.49333rem;
+    float: left; }
+    #header .left i {
+      font-size: 1.06667rem; }
+  #header input {
+    float: left;
+    width: 13.568rem;
+    height: 1.49333rem;
+    padding: 0.21333rem 0.64rem;
+    border-radius: 0.64rem;
+    border: 0;
+    background: #f8f8f8;
+    font-size: 0.64rem; }
+
+#main {
+  margin-top: 1.28rem; }
+  #main h1 {
+    font-size: 0.72533rem;
+    margin-bottom: 1.06667rem; }
+  #main li {
+    float: left; }
+    #main li a {
+      float: left;
+      padding: 0.42667rem 0.42667rem;
+      font-size: 0.59733rem;
+      text-decoration: none;
+      background: #f7f7f7;
+      color: #666;
+      margin-right: 0.64rem;
+      margin-bottom: 0.64rem;
+      border-radius: 0.21333rem; }

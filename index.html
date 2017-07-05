@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>饿了么</title>
+		<link rel="stylesheet" type="text/css" href="js/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font_m6pr4pfburgm0a4i/iconfont.css"/>
+		<script src="js/hotcss.js"></script>
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/zepto.js"></script>
+		<script src="js/template.js"></script>		
+		
+	</head>
+	<body>
+		<div id="header">
+			<div class="top">
+				<div class="address">福田区中心区深圳</div>
+				<div class="weather">
+					<div class="left">
+						<h2>30°</h2>
+						<p>多云天</p>
+					</div>
+					<img src="resource/img/5383cfd55c8ba454449f63f54ce2apng.png"/>
+				</div>
+			</div>			
+			<a href="html/search.html" class="search">搜索商家、商品</a>
+			<ul class="header-list">
+				<li><a href="#">牛排</a></li>
+				<li><a href="#">兰州拉面</a></li>
+				<li><a href="#">凉面</a></li>
+				<li><a href="#">水果5折起</a></li>
+				<li><a href="#">我的菜</a></li>
+				<li><a href="#">稻香</a></li>
+				<li><a href="#">云吞面</a></li>
+			</ul>
+		</div>
+		<div id="nav">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+		        	<div class="swiper-slide slide-box"></div>
+		        	<div class="swiper-slide slide-box"></div>
+	    		</div>
+		    	<!-- 如果需要分页器 -->
+		    	<div class="swiper-pagination"></div>
+			</div>
+			
+		</div>
+		
+		<div id="main">
+			<h3 class="index-title">推荐商家</h3>
+			<div class="shop-list">
+				
+			</div>
+		</div>
+		<div id="footer">
+			<a href="#">
+				<span><i class="iconfont">&#xe639;</i></span>
+				<span>外卖</span>
+			</a>
+			<a href="#">
+				<span><i class="iconfont">&#xe609;</i></span>
+				<span>发现</span>
+			</a>
+			<a href="#">
+				<span><i class="iconfont">&#xe674;</i></span>
+				<span>订单</span>
+			</a>
+			<a href="html/login.html">
+				<span><i class="iconfont">&#xe62f;</i></span>
+				<span>我的</span>
+			</a>
+		</div>
+		<script type="text/html" id="tpl-navlist1">			
+			<% for(var i = 0;i<8;i++){ %>					
+				<a href="javascript:">
+        			<div class="pic">
+        				<img src="//fuss10.elemecdn.com/<%= list[i].image_hash %>.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/"/>
+        			</div>
+        			<span class="title"><%= list[i].name %></span>
+        		</a> 
+			<%}%>
+		</script>
+		<script type="text/html" id="tpl-navlist2">			
+			<% for(var i = 8;i<list.length;i++){ %>					
+				<a href="javascript:">
+        			<div class="pic">
+        				<img src="//fuss10.elemecdn.com/<%= list[i].image_hash %>.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/"/>
+        			</div>
+        			<span class="title"><%= list[i].name %></span>
+        		</a> 
+			<%}%>
+		</script>
+		<script type="text/html" id="tpl-shoplist">
+			<% for(var i=0;i<shopArr.length;i++){ %>
+			<div class="shopOne index-container">
+				<div class="logo">
+					<% if(shopArr[i].image_path.substr(shopArr[i].image_path.length-3,3) == 'png'){ %>
+						<img src="//fuss10.elemecdn.com/<%= shopArr[i].image_path %>.png?imageMogr/format/webp/thumbnail/!120x120r/gravity/Center/crop/120x120/"/>
+					<%}else{%>
+						<img src="//fuss10.elemecdn.com/<%= shopArr[i].image_path %>.jpeg?imageMogr/format/webp/thumbnail/!120x120r/gravity/Center/crop/120x120/"/>
+					<%}%>
+					
+				</div>
+				<div class="shop-main">
+					<div class="top">
+						<h3 class="shopname"><%= shopArr[i].name %></h3>
+						<div class="shop-title">
+							<% if( shopArr[i].supports[0]){ %>
+								<div class="shop-title1"><%= shopArr[i].supports[0].icon_name %></div>
+							<%}else{%>
+								<div class="shop-title1"></div>
+							<%}%>
+							
+							<%if( shopArr[i].supports[1] ){ %>
+								<div class="shop-title2"><%= shopArr[i].supports[1].icon_name %></div>
+							<%}else{%>
+								<div class="shop-title2"></div>
+							<%}%>
+							
+							<%if( shopArr[i].supports[2] ){ %>
+								<div class="shop-title3"><%= shopArr[i].supports[2].icon_name %></div>
+							<%}else{%>
+								<div class="shop-title3"></div>
+							<%}%>
+							
+						</div>
+					</div>				
+					<div class="middle">
+						<div class="shop-message">
+							<div class="stars">
+								<div class="stars-bg">
+									<span><i class="iconfont">&#xe635;</i></span>
+									<span><i class="iconfont">&#xe635;</i></span>
+									<span><i class="iconfont">&#xe635;</i></span>
+									<span><i class="iconfont">&#xe635;</i></span>
+									<span><i class="iconfont">&#xe635;</i></span>
+								</div>
+								<div class="stars-on">
+									<span><i class="iconfont">&#xe635;</i></span>
+									<span><i class="iconfont">&#xe635;</i></span>
+									<span><i class="iconfont">&#xe635;</i></span>
+									<span><i class="iconfont">&#xe635;</i></span>
+									<span><i class="iconfont">&#xe635;</i></span>
+								</div>
+							</div>
+							<span class="grade"><%= shopArr[i].rating %></span>
+							<span class="count">月售<%= shopArr[i].recent_order_num %>单</span>
+						</div>
+						<div class="distribution">
+							
+							<% if(shopArr[i].supports[1]){ %>
+								<span><%= shopArr[i].supports[1].name %></span>
+							<%}%>
+							<% if(shopArr[i].delivery_mode){ %>
+								<span><%= shopArr[i].delivery_mode.text %></span>
+							<%}%>
+							
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="money">
+							<span>￥<%= shopArr[i].float_minimum_order_amount %>元起送</span>
+							<span><%= shopArr[i].piecewise_agent_fee.description %></span>
+							<span><%= shopArr[i].average_cost %></span>
+						</div>
+						<div class="timer">
+							<span class="path"><%= shopArr[i].distance %>m</span>
+							<span class="time"><%= shopArr[i].order_lead_time %>分钟</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<%}%>	
+		</script>	
+		<script>
+			new Swiper('.swiper-container', {	
+				loop: true,	
+				pagination: '.swiper-pagination',					
+			})
+			console.log('hhhhhhh')
+		</script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+@import './px2rem.scss';
+@import './reset.css';
+
+body{
+    padding: px2rem(20) px2rem(20) 0 px2rem(20);
+}
+#header{
+    overflow: hidden;
+   .left{
+       width: px2rem(70);
+       height: px2rem(70);
+       
+       text-align: center;
+       line-height: px2rem(70);
+       float: left;
+       i{
+          font-size: px2rem(50); 
+       }
+   }
+   input{
+       float: left;
+       width: px2rem(636);
+       height: px2rem(70);
+       padding: px2rem(10) px2rem(30);
+       border-radius: px2rem(30);
+       border: 0;
+       background: #f8f8f8;
+       font-size: px2rem(30);
+   } 
+}
+#main{
+    margin-top: px2rem(60);
+    h1{
+        font-size: px2rem(34);
+        margin-bottom: px2rem(50);
+    }
+    li{
+        float: left;
+        a{
+            float: left;
+            padding: px2rem(20) px2rem(20);
+            font-size: px2rem(28);
+            text-decoration: none;
+            background: #f7f7f7;
+            color: #666;
+            margin-right: px2rem(30);
+            margin-bottom: px2rem(30);
+            border-radius: px2rem(10);
+        }
+    }
+}

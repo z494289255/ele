@@ -1,0 +1,254 @@
+@import url(./reset.css);
+#header {
+  height: 5.54667rem;
+  background: rgba(119, 103, 137, 0.43);
+  padding: 0 0.42667rem; }
+  #header h1 {
+    padding: 0.21333rem 0; }
+    #header h1 i {
+      font-size: 1.06667rem;
+      color: #fff; }
+  #header .shop-message {
+    height: 2.77333rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    #header .shop-message .left img {
+      width: 2.77333rem;
+      height: 2.77333rem; }
+    #header .shop-message .right {
+      width: 12.37333rem;
+      padding-left: 0.42667rem;
+      color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #header .shop-message .right h2 {
+        font-size: 0.72533rem; }
+      #header .shop-message .right .distribution {
+        font-size: 0.512rem; }
+        #header .shop-message .right .distribution span:nth-child(2):before {
+          content: '/ '; }
+        #header .shop-message .right .distribution span:nth-child(3):before {
+          content: '/ '; }
+        #header .shop-message .right .distribution span:nth-child(4) {
+          float: right;
+          font-size: 0.768rem;
+          margin-top: -0.17067rem; }
+      #header .shop-message .right p {
+        font-size: 0.46933rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+  #header .activity {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 0.42667rem;
+    color: #fff;
+    margin-top: 0.46933rem; }
+
+#main .title {
+  height: 1.92rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #main .title a {
+    display: block;
+    width: 8rem;
+    text-align: center;
+    line-height: 1.92rem;
+    font-size: 0.512rem;
+    color: #000;
+    text-decoration: none; }
+    #main .title a span {
+      padding-bottom: 0.10667rem; }
+  #main .title .select {
+    color: #3190e8;
+    border-bottom: 0.02133rem solid #3190e8; }
+#main .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #main .container .list {
+    width: 3.62667rem;
+    height: 18.90133rem;
+    overflow: auto;
+    background: #f8f8f8; }
+    #main .container .list li {
+      font-size: 0.55467rem;
+      padding: 0.81067rem 0.42667rem; }
+  #main .container .info {
+    height: 18.90133rem;
+    overflow: auto;
+    width: 12.37333rem; }
+    #main .container .info .info-title {
+      background: #f8f8f8;
+      height: 1.344rem;
+      padding: 0 0.42667rem;
+      line-height: 1.344rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #main .container .info .info-title strong {
+        display: inline-block;
+        font-size: 0.512rem;
+        width: 1.19467rem; }
+      #main .container .info .info-title .txt {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 10.112rem;
+        font-size: 0.384rem;
+        color: #999;
+        line-height: 1.49333rem; }
+        #main .container .info .info-title .txt span:nth-child(2) {
+          font-size: 0.64rem;
+          line-height: 0.98133rem; }
+    #main .container .info .goods {
+      padding-left: 0.42667rem; }
+      #main .container .info .goods .food {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        height: 5.248rem;
+        padding: 0.64rem 0;
+        border-bottom: 0.02133rem solid #ddd; }
+        #main .container .info .goods .food .foodimg {
+          width: 2.19733rem; }
+          #main .container .info .goods .food .foodimg img {
+            width: 2.19733rem;
+            height: 2.19733rem; }
+        #main .container .info .goods .food .foodinfo {
+          padding-right: 0.42667rem; }
+          #main .container .info .goods .food .foodinfo h2 {
+            font-size: 0.64rem;
+            margin-bottom: 0.21333rem; }
+          #main .container .info .goods .food .foodinfo .fooddescription {
+            font-size: 0.384rem;
+            color: #999;
+            padding-right: 0.85333rem;
+            line-height: 0.46933rem; }
+          #main .container .info .goods .food .foodinfo .foodsales {
+            font-size: 0.46933rem;
+            color: #666;
+            margin-top: 0.32rem; }
+          #main .container .info .goods .food .foodinfo .price {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            font-size: 0.64rem;
+            margin-top: 0.64rem; }
+            #main .container .info .goods .food .foodinfo .price span:nth-child(1) {
+              color: #f60; }
+            #main .container .info .goods .food .foodinfo .price .add {
+              width: 0.85333rem;
+              height: 0.85333rem;
+              border-radius: 0.42667rem;
+              background: #3190e8;
+              text-align: center;
+              color: #fff; }
+
+#footer {
+  height: 2.048rem;
+  background: #3d3d3f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #footer .chat {
+    width: 3.37067rem;
+    position: relative; }
+    #footer .chat span {
+      display: block;
+      width: 1.70667rem;
+      height: 1.70667rem;
+      border: 0.21333rem solid #444;
+      border-radius: 1.06667rem;
+      position: absolute;
+      top: -0.53333rem;
+      left: 0.64rem;
+      background: #3d3d3f; }
+      #footer .chat span img {
+        width: 1.06667rem;
+        height: 1.06667rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -0.53333rem;
+        margin-top: -0.53333rem; }
+  #footer .money {
+    width: 8.14933rem; }
+    #footer .money .totlePrice {
+      color: #fff;
+      font-size: 0.64rem;
+      margin-top: 0.42667rem; }
+    #footer .money .order-price {
+      color: #fff;
+      font-size: 0.42667rem; }
+  #footer .btnbox {
+    width: 4.48rem; }
+    #footer .btnbox a {
+      display: block;
+      width: 4.48rem;
+      height: 2.048rem;
+      text-align: center;
+      line-height: 2.048rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.64rem;
+      background: #535356; }
